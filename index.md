@@ -1,3 +1,24 @@
+## Installation Process
+
+To install my Arch Linux system, the [Arch Wiki Installation Guide](https://wiki.archlinux.org/title/Installation_guide) was used.
+
+An Arch Linux .iso file was received via flash drive to load the .iso into VMWare Fusion. From here, the installation guide follows through the steps to setup a Linux system.
+
+### Installing Arch Linux
+
+First, the boot mode was verified to be UEFI with the command:
+```markdown
+ls /sys/firmware/efi/efivars
+```
+Successful running of this command verifies that the system is in UEFI mode.
+
+Next, internet connection was checked with the commands:
+```markdown
+ip link
+ping archlinux.org
+```
+The network interfaces are listed and packets were returned, confirming internet connection.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/jarowmyers/jarowmyers.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
