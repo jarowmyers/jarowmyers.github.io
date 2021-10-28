@@ -174,7 +174,7 @@ reboot
 ### In the New System
 Sign in as root with root password:
 ```markdown
-(Jiu Li, Do the thing!)
+(Zhu Li, Do the thing!)
 ```
 Test network with ping: //this failed so I had to fix it below
 ```markdown
