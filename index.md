@@ -251,7 +251,7 @@ For web browsing, download Links browser:
 pacman -S links
 ```
 Color coding the terminal:
-Follow this link https://averagelinuxuser.com/linux-terminal-color/
+Follow [this link](https://averagelinuxuser.com/linux-terminal-color/)
 to download files and move them into appropriate locations to add color coding.
 This requires unzip, downloaded using:
 ```markdown
