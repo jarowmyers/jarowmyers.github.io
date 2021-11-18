@@ -1,6 +1,6 @@
 # Docker Lab Documentation
 
-This lab was done on a Ubuntu VM.
+This lab was done on a Ubuntu VM. Some steps were taken from [this guide](https://www.hostinger.com/tutorials/run-docker-wordpress).
 
 ### Install Docker
 
@@ -13,6 +13,8 @@ Docker-compose was installed with this command.
 ```markdown
 sudo apt install docker-compose
 ```
+
+### Preparing Wordpress Docker Compose File.
 A directory was made for the docker-compose file.
 ```markdown
 mkdir /~/wordpress
@@ -62,7 +64,9 @@ The current user was added to the docker group to make sure things worked.
 ```markdown
 sudo usermod -aG docker $USER
 ```
-Then the compose file was started to start running the wordpress site.
+
+### Starting Up Wordpress
+The compose file was started to start running the wordpress site.
 ```markdown
 sudo docker-compose up -d
 ```
@@ -75,6 +79,12 @@ sudo dockerd
 Then, retrying the startup command worked. It runs and downloads all the wordpress information and starts it on localhost:8000.
 
 In firefox, I then navigated to localhost:8000 and the wordpress page is there.
+
+The initial wordpress page.
 ![The initial wordpress page.](/images/initialimage.png)
+
+The wordpress setup page.
 ![The wordpress setup page.](/images/setuppage.png)
+
+The wordpress dashboard.
 ![The wordpress dashboard.](/images/wordpressdashboard.png)
