@@ -26,6 +26,8 @@ touch docker-compose.yml
 nano docker-compose.yml
 ```
 The contents of the compose file were taken from [this link](https://docs.docker.com/samples/wordpress/). Version was changed from 3.9 to 3.3.
+
+docker-compose.yml
 ```markdown
 version: "3.3"
     
