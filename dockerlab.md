@@ -74,7 +74,7 @@ sudo docker-compose up -d
 ```
 This was met with an error. Evidently the docker daemon was not running, so it needed to be started. I thought having docker running would handle this but for some reason it did not.
 
-This issue was fixed by opening new terminal window and using the following command to manually start the daemon:
+This issue was fixed by opening a new terminal window and using the following command to manually start the daemon:
 ```markdown
 sudo dockerd
 ```
