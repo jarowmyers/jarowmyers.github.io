@@ -5,11 +5,17 @@
 An account was created on [Digital Ocean](https://www.digitalocean.com/).
 
 On Digital Ocean, a new virtual machine droplet was created. The settings selected for this VM are:
+
 -Ubuntu 20.04 (LTS) x64
+
 -Basic shared CPU
+
 -Regular Intel with SSD
+
 -$5/mo
+
 -San Francisco 3 region
+
 
 The droplet was given a root password and the identifier 'ubuntu-lab3'.
 
@@ -22,14 +28,23 @@ Docker was installed using [this guide](https://thematrix.dev/install-docker-and
 Install Docker with:
 ```markdown
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+```
+```markdown
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+```
+```markdown
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
+```
+```markdown
 apt-cache policy docker-ce
+```
+```markdown
 sudo apt install docker-ce -y
 ```
+
 Install Docker-Compose with:
 ```markdown
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -109,8 +124,11 @@ The active tunnel shown in WireGuard.
 ![](/images/vpnSettings.PNG)
 
 To setup the VPN on a laptop, the contents of the ~/wireguard/config/peer_pc1/peer_pc1.conf file are needed.
-In the WireGuard application, the 'Add Empty Tunnel...' option was chosen, and then the contents of the peer_pc1.conf file was copied into the application.
+
+In the WireGuard application, the 'Add Empty Tunnel...' option was chosen, and then the contents of the peer_pc1.conf file were copied into the application.
+
 The tunnel was then saved and the device can connect to the VPN.
+
 An image of the laptop IP before and after connecting as well as the active tunnel in WireGuard are shown below.
 
 The unconnected IP, the IP when connected, and the active tunnel in WireGuard.
