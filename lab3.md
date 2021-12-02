@@ -96,6 +96,18 @@ docker-compose logs -f wireguard
 ```
 Then, scan the code to connect.
 
+The IP when not connected.
+![not connected](/images/bareIP.PNG)
+
+The IP when connected to the VPN.
+![connected](/images/vpnIP.PNG)
+
+The active tunnel shown in WireGuard.
+![active WireGuard](/images/vpnSettings.PNG)
+
 To setup the VPN on a laptop, the contents of the ~/wireguard/config/peer_pc1/peer_pc1.conf file are needed.
 In the WireGuard application, the 'Add Empty Tunnel...' option was chosen, and then the contents of the peer_pc1.conf file was copied into the application.
 The tunnel was then saved and the device can connect to the VPN.
+
+The unconnected IP, the IP when connected, and the active tunnel in WireGuard.
+![laptop images](/images/vpnLaptop.png)
