@@ -1,5 +1,6 @@
 # Lab 3 Documentation
 
+This documentation covers the process of setting up an Ubuntu VM through Digital Ocean, installing Docker on it, and installing WireGuard through Docker.
 
 ### Create a Digital Ocean Droplet
 An account was created on [Digital Ocean](https://www.digitalocean.com/).
@@ -25,7 +26,7 @@ The VM console was accessed using the Digital Ocean console window.
 Docker was installed using [this guide](https://thematrix.dev/install-docker-and-docker-compose-on-ubuntu-20-04/
 ). All steps taken from the guide are documented below, it is just for reference.
 
-Install Docker with:
+Install Docker with the following sequence of commands:
 ```markdown
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 ```
@@ -54,6 +55,7 @@ Set permissions:
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+At this point, the VM will have Docker and Docker-Compose, and these can be used to install WireGuard.
 
 ### Install WireGuard
 
@@ -95,11 +97,12 @@ services:
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
 ```
-Then start WireGuard with:
+Then start WireGuard with docker-compose:
 ```markdown
 cd ~/wireguard/
 docker-compose up -d
 ```
+At this point, the WireGuard server should be running, and it can be used to connect devices to a VPN.
 
 ### Using the VPN
 The WireGuard application was installed on both a mobile device and a laptop through their respective app stores.
