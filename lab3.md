@@ -98,16 +98,15 @@ Then, scan the code to connect. Images of the phone IP before and after connecti
 
 The mobile phone IP when not connected.
 
-<img src=/images/bareIP.PNG width=20% height=20%>
+![](/images/bareIP.PNG)
 
 The IP when connected to the VPN.
 
-<img src=/images/vpnIP.PNG width=20% height=20%>
+![](/images/vpnIP.PNG)
 
 The active tunnel shown in WireGuard.
 
-<img src=/images/vpnSettings.PNG width=20% height=20%>
-
+![](/images/vpnSettings.PNG)
 
 To setup the VPN on a laptop, the contents of the ~/wireguard/config/peer_pc1/peer_pc1.conf file are needed.
 In the WireGuard application, the 'Add Empty Tunnel...' option was chosen, and then the contents of the peer_pc1.conf file was copied into the application.
