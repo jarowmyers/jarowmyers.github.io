@@ -94,20 +94,25 @@ To get the QR code for connecting a phone, run the command:
 ```markdown
 docker-compose logs -f wireguard
 ```
-Then, scan the code to connect.
+Then, scan the code to connect. Images of the phone IP before and after connecting are shown below, as well as the active tunnel in WireGuard.
 
-The IP when not connected.
-![not connected](/images/bareIP.PNG)
+The mobile phone IP when not connected.
+
+<img src=/images/bareIP.PNG width=20% height=20%>
 
 The IP when connected to the VPN.
-![connected](/images/vpnIP.PNG)
+
+<img src=/images/vpnIP.PNG width=20% height=20%>
 
 The active tunnel shown in WireGuard.
-![active WireGuard](/images/vpnSettings.PNG)
+
+<img src=/images/vpnSettings.PNG width=20% height=20%>
+
 
 To setup the VPN on a laptop, the contents of the ~/wireguard/config/peer_pc1/peer_pc1.conf file are needed.
 In the WireGuard application, the 'Add Empty Tunnel...' option was chosen, and then the contents of the peer_pc1.conf file was copied into the application.
 The tunnel was then saved and the device can connect to the VPN.
+An image of the laptop IP before and after connecting as well as the active tunnel in WireGuard are shown below.
 
 The unconnected IP, the IP when connected, and the active tunnel in WireGuard.
 ![laptop images](/images/vpnLaptop.png)
